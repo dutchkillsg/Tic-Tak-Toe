@@ -16,12 +16,11 @@ $font:'Lobster', cursive;
 }
 .square{
 	float:left;
-	
 	width:119px;
 	height:119px;
 	cursor:crosshair;
-
-
+	text-align: center;
+	padding:50px;
 }
 
 .bottom{
@@ -39,3 +38,4 @@ $font:'Lobster', cursive;
 .oh{
 	background-color:red;
 }
+

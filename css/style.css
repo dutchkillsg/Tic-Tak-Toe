@@ -10,8 +10,10 @@
 .square {
   float: left;
   width: 119px;
-  height: 119px;
-  cursor: crosshair; }
+  height: 84px;
+  cursor: crosshair;
+  text-align: center;
+  padding-top: 35px; }
 
 .bottom {
   border-bottom: 1px solid black; }
