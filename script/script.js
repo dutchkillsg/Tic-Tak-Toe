@@ -14,12 +14,19 @@ $(document).ready(function(){
 			//when square has been selected by player 1 set the player to 2;vice versa
 			if(player===1){
 				squareSelected.addClass("ex");
+				if (checkWin("ex")){
+					alert("Congrats! Player " + player + " has WON!")
+				} else {
 				player = 2;
+				}
 			} else {
 				squareSelected.addClass("oh");
-				player =1
+				if (checkWin("oh")){
+					alert("Congrats! Player " + player + " has WON!")
+				} else {
+				player = 1;
+			 	}
 			}
-			//add the rest of our logic 
 		}
 	});
 	//check if player won
@@ -49,3 +56,4 @@ $(document).ready(function(){
 });
 
 	
+					
