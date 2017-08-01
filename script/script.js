@@ -3,14 +3,16 @@ $(document).ready(function(){
 	$('.square').on("click", function(event){
 		
 
-		var sqaureSelected = $(this);
-		if(sqaureSelected.hasclass("ex") || sqaureSelected.hasclass("oh")){
+		var squareSelected = $(this);
+		if(squareSelected.hasClass("ex") || squareSelected.hasClass("oh")){
 			alert("you have clicked here already!")
 		} else {
 			if(player===1){
-				sqaureSelected.addClass("ex");
+				squareSelected.addClass("ex");
+				player = 2;
 			} else {
-				sqaureSelected.addClass("oh");
+				squareSelected.addClass("oh");
+				player =1
 			}
 			//add the rest of our logic 
 		}
