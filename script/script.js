@@ -21,7 +21,10 @@ $(document).ready(function(){
 			}
 			//add the rest of our logic 
 		}
-	})
+	});
+	function checkWin(){
+		
+	}
 
 });
 
