@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+#gameboard {
+  width: 360px;
+  margin: 40px auto 0 auto; }
+
+.row {
+  clear: both;
+  overflow: hidden; }
+
+.square {
+  float: left;
+  width: 119px;
+  height: 119px;
+  cursor: crosshair; }
+
+.bottom {
+  border-bottom: 1px solid black; }
+
+.right {
+  border-right: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */
