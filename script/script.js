@@ -23,10 +23,10 @@ $(document).ready(function(){
             return;
         }
         var squareSelected = $(this);
-        // Use .is() for shorter syntax, only testing two classes
+        // testing two classes
         if(squareSelected.is(occupied)){
             alert("you have clicked here already!");
-            return; // Exit, to make rest of code more flat
+            return; 
         }
         // Get name of class to use:
         var symbol = symbols[player-1];
@@ -34,7 +34,7 @@ $(document).ready(function(){
         if (checkWin(symbol)){
             alert("Congrats! Player " + player + " has WON!");
             player = 0; // Avoid that play continues in this state.
-            return; // Exit, to make rest of code more flat
+            return; 
         }
         // Test for a tie
         if ($squares.filter(occupied).length == 9) {
