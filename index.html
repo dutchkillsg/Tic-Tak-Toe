@@ -28,23 +28,41 @@
 
 </head>
 <body>
-<div id = "gameboard">
-  <div class= "row">
-    <div class = "square bottom right sq1"></div>
-    <div class = "square bottom right sq2"></div>
-    <div class = "square bottom sq3"></div>
+<div id ="container">
+  <h1 id ="row">Tic-Tac-Toe</h1>
+  <ul class = "four columns">
+    <li>player 1 is "X"</li>
+    <li>player 2 is "O"</li>
+    <li>First to have 3 in a row wins</li>
+    <label for = "player1">Player 1</label>
+      <input type = "text" id ="player1">
+      <label for = "player2">Player 2</label>
+      <input type = "text" id ="player2">
+  </ul>
+  <div id = "gameboard" class = "six columns">
+    <div class= "row">
+      <div class = "square bottom right fa fa-4x"></div>
+      <div class = "square bottom right fa fa-4x"></div>
+      <div class = "square bottom  fa fa-4x"></div>
+    </div>
+    <div class= "row">
+      <div class = "square bottom right fa fa-4x"></div>
+      <div class = "square bottom right fa fa-4x"></div>
+      <div class = "square bottom fa fa-4x"></div>
+    </div>
+    <div class= "row">
+      <div class = "square right fa fa-4x"></div>
+      <div class = "square right fa fa-4x"></div>
+      <div class = "square fa fa-4x"></div>
+    </div>
+    <!-- <div class = "2 columns">
+      <label for = "player1">Player 1</label>
+      <input type = "text" id ="player1">
+      <label for = "player2">Player 2</label>
+      <input type = "text" id ="player2">
+    </div> -->
+    <button id ="reset" type ="reset">reset</button>
   </div>
-  <div class= "row">
-    <div class = "square bottom right sq4"></div>
-    <div class = "square bottom right sq5"></div>
-    <div class = "square bottom sq6"></div>
-  </div>
-  <div class= "row">
-    <div class = "square right sq7"></div>
-    <div class = "square right sq8"></div>
-    <div class = "square sq9"></div>
-  </div>
-  <button type ="reset">reset</button>
      
     
 

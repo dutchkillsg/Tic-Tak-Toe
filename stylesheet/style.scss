@@ -3,10 +3,18 @@ $body : #21c6be;
 $size : 100px;
 $color: #c621b3;
 $font:'Lobster', cursive;
-
+body{
+	background-color:$body;
+}
+h1{
+	font-family: $font;
+	text-align:center;
+	color: $color;
+	background-color:#236d72;
+}
 #gameboard{
 
-	width: 360px;
+	
 	margin:40px auto 0 auto;
 }
 .row{
@@ -17,10 +25,10 @@ $font:'Lobster', cursive;
 .square{
 	float:left;
 	width:119px;
-	height:119px;
+	height:84px;
 	cursor:crosshair;
 	text-align: center;
-	padding:50px;
+	padding-top:35px;
 }
 
 .bottom{
@@ -31,11 +39,26 @@ $font:'Lobster', cursive;
 	border-right: 1px solid black;
 }
 
-.ex{
-	background-color:blue;
+
+button{
+	color: $color;
 }
 
-.oh{
-	background-color:red;
+ul{ 
+	padding-top:50px;
+	
+
+	li{
+		font-size:16pt;
+		color:$color;
+		font-family: $font;
+		list-style:none;
+	}
+}
+
+label{
+	color: $color;
+	font-family: $font;
+	
 }
 
