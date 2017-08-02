@@ -67,3 +67,5 @@ $(document).ready(function(){
         $(".square").removeClass(symbols.join(" "));
     });
 });					
+
+//everything works except for the player input 
