@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+body {
+  background-color: #21c6be; }
+
+h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  color: #c621b3;
+  background-color: #236d72; }
+
 #gameboard {
-  width: 360px;
   margin: 40px auto 0 auto; }
 
 .row {
@@ -10,8 +18,10 @@
 .square {
   float: left;
   width: 119px;
-  height: 119px;
-  cursor: crosshair; }
+  height: 84px;
+  cursor: crosshair;
+  text-align: center;
+  padding-top: 35px; }
 
 .bottom {
   border-bottom: 1px solid black; }
@@ -19,10 +29,19 @@
 .right {
   border-right: 1px solid black; }
 
-.ex {
-  background-color: blue; }
+button {
+  color: #c621b3; }
 
-.oh {
-  background-color: red; }
+ul {
+  padding-top: 50px; }
+  ul li {
+    font-size: 16pt;
+    color: #c621b3;
+    font-family: "Lobster", cursive;
+    list-style: none; }
+
+label {
+  color: #c621b3;
+  font-family: "Lobster", cursive; }
 
 /*# sourceMappingURL=style.css.map */
