@@ -2,19 +2,24 @@
 //directly put the "fa fa" icon classes into html so they dont need to be inserted with "add class"
 //stored player into a variable 
 //
-	
 $(document).ready(function(){
-	$("#submit").submit(function(){
-	    var names = [$("#player1").val(),$("#player2").val()]
-	}) // cant get the player names to work with the player variable. 
-    
-    var player = 1;
+	var i = 0
+    var names = []
+    var player = 1
     // Define the classes that are used for the two symbols
     var symbols = ['fa-times', 'fa-circle-o'];
     // Get collection of the 9 squares
     var $squares = $(".square");
     // Set the filter to be used to identify occupied square(s)
     var occupied = "." + symbols.join(", .");
+	//pull form for names then push to names array 
+    $("#namesForm").submit(function(){
+	   names.push($("#player1").val())
+       names.push($("#player2").val())
+        return false
+	}); 
+    
+    
 
     $('.square').on("click", function(event){
         // Add a test to avoid play continues after game already ended
@@ -31,8 +36,8 @@ $(document).ready(function(){
         // Get name of class to use:
         var symbol = symbols[player-1];
         squareSelected.addClass(symbol);
-        if (checkWin(symbol)){
-            alert("Congrats! Player " + player + " has WON!");
+        if (checkWin(symbol)){ //
+            alert("Congrats! Player " + names[player-1] + " has WON!");
             player = 0; // Avoid that play continues in this state.
             return; 
         }
@@ -47,7 +52,7 @@ $(document).ready(function(){
     });
 
     function checkWin(symbol){
-        // Use more generic & functional code to test for 3-in-a-row 
+        // made a multidimensional array that tests for 3 in a row
         var lines = [
             [0, 1, 2], [3, 4, 5], [6, 7, 8],
             [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -68,4 +73,3 @@ $(document).ready(function(){
     });
 });					
 
-//everything works except for the player input 
